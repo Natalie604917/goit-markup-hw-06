@@ -384,8 +384,8 @@
      </main>
 
         <!-- подвал -->
-        <footer class="adds-unit">
-            <div class="footer-container">
+       <footer class="adds-unit">
+          <div class="footer-container">
                 <div class="thumb-footer">
                     <a href="./index.html" class="logo-link"><span class="logo-web">Web</span><span
                             class="logo-studio">Studio</span>
@@ -406,50 +406,115 @@
                             </li>
                         </ul>
                     </address>
-                </div>
+               </div>
         
                 <div class="thumb-footer">
                     <p class="followers-text">присоединяйтесь</p>
                     <ul class="socials-list">
-                        <li class="socials-item">
+                      <li class="socials-item">
                             <a href="./" class="socials-link" target="_blank" rel="noopener norefferrer">
                                 <svg class="followers-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li class="socials-item">
+                      </li>
+                      <li class="socials-item">
                             <a href="./" class="socials-link" target="_blank" rel="noopener norefferrer">
                                 <svg class="followers-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li class="socials-item">
+                       </li>
+                       <li class="socials-item">
                             <a href="./" class="socials-link" target="_blank" rel="noopener norefferrer">
                                 <svg class="followers-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li class="socials-item">
+                      </li>
+                      <li class="socials-item">
                             <a href="./" class="socials-link" target="_blank" rel="noopener norefferrer">
                                 <svg class="followers-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+                      </li>
+                  </ul>
+               </div>
+               <div class="thumb-footer">
+                  <p class="followers-text">Подпишитесь на рассылку</p>
+                  <form class="followers-form"> 
+                     <label class="followers-field">
+                         <input class="followers-input" type="email" name="email" placeholder="E-mail" />
+                     </label>
+                      <div class="send-thumb">
+                         <button class="filter-secondary" type="submit">Подписаться</button>
+                          <svg class="followers-icon-send" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                           </svg>
+                      </div>
+                 </form>   
+               </div>
+         </div>     
+      </footer>
       <div data-modal class="backdrop is-hidden data-backdrop">
           <div class="modal">
               <button data-modal-close class="modal-button"  aria-label="Close" onclick="myDialog.close()">
-                 <svg class="modal-item" width="18" height="18">
+                 <svg class="modal-icon" width="18" height="18">
                      <use href="./images/icons.svg#icon-close-black"></use>
                  </svg>
-            </button>
+             </button>
+
+             <form class="modal-form">
+                  <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+                  <div class="form-field">
+                     <label>
+                         <input class="form-input" type="text" name="user-name">
+                         <span class="form-text">Имя</span>
+                         <svg class="label-icon" width="18" height="18">
+                             <use href="./images/icons.svg#icon-human"></use>
+                         </svg>
+                     </label>
+                  </div>
+                  <div class="form-field">
+                     <label>
+                          <input class="form-input" type="tel" name="tel">
+                          <span class="form-text">Телефон</span>
+                          <svg class="label-icon" width="18" height="18">
+                             <use href="./images/icons.svg#icon-tel"></use>
+                          </svg>
+                     </label>
+                  </div>
+                  <div class="form-field">
+                     <label>
+                         <input class="form-input" type="email" name="mail">
+                         <span class="form-text">Почта</span>
+                         <svg class="label-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email-1"></use>
+                        </svg>
+                     </label>
+                  </div>
+                  <div class="form-field">
+                     <label>
+                         <textarea class="form-input" name="comments"  rows="6" placeholder="Введите текст"></textarea>
+                         <span class="form-text">Комментарий</span>
+                     </label>
+                  </div>
+                  <div class="form-field">
+                     <label class="checkbox-label">
+                         <input class="checkbox-input" type="checkbox" name="agreement">
+                             <svg class="label-icon-checkbox" width="16" height="15">
+                                <use href="./images/icons.svg#icon-icon-check-2"></use>
+                            </svg> 
+                         <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+                         <a class="modal-link" href="./" target="_blank" rel="noopener norefferrer">Условия договора</a>
+                     </label>
+                 </div>
+                                               
+                 <button class="filter-secondary" type="submit">
+                      Отправить
+                 </button>
+             </form>
           </div>
       </div>
      <script src="./js/modal.js"></script>
